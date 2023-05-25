@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.App {
+  text-align: center;
+}
+.Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  border: 1px solid black;
+}
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 756px) {
+  .Container {
+    background-color: red;
+  }
+  .Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
